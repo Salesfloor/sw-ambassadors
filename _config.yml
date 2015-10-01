@@ -1,0 +1,4 @@
+baseurl: ""
+url: "http://apply.my.stuartweitzman.ca"
+
+markdown: kramdown

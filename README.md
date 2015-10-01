@@ -1,1 +1,1 @@
-# sw-ambassadors
+# ambassadors
