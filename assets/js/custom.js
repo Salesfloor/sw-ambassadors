@@ -3,7 +3,7 @@
 
 
 /* =================================
-   LOGIN-SIGNUP MODAL                     
+   LOGIN-SIGNUP MODAL
 =================================== */
 
 function showRegisterForm(){
@@ -25,7 +25,7 @@ function showLoginForm(){
         $('.register-footer').fadeOut('fast',function(){
             $('.login-footer').fadeIn('fast');
         });
-        
+
         $('.modal-title').html('Sign in to <span>SmartMvp</span>');
         $('.modal-subtitle').html('Enter your email and password');
     });
@@ -68,7 +68,7 @@ $(window).scroll(function(){
 
 
 /* =================================
-   DATA SPY FOR ACTIVE SECTION                 
+   DATA SPY FOR ACTIVE SECTION
 =================================== */
 (function($) {
     $('body').attr('data-spy', 'scroll').attr('data-target', '.navbar-fixed-top').attr('data-offset', '11');
@@ -76,7 +76,7 @@ $(window).scroll(function(){
 
 
 /* =================================
-   HIDE MOBILE MENU AFTER CLICKING 
+   HIDE MOBILE MENU AFTER CLICKING
 =================================== */
 (function($) {
     $('.nav.navbar-nav li a').click(function () {
@@ -99,7 +99,7 @@ $(window).scroll(function(){
 $(document).ready(function() {
 
 /* =================================
-    WOW ANIMATIONS                   
+    WOW ANIMATIONS
 =================================== */
 new WOW().init();
 
@@ -119,7 +119,7 @@ $('.tabs.features').easytabs({
 
 
 /* ==========================================
-   OWL CAROUSEL 
+   OWL CAROUSEL
 ============================================= */
 /* App Screenshot Carousel in Mobile-Download Section */
 $("#owl-carousel-shots-phone").owlCarousel({
@@ -148,7 +148,7 @@ $('.venobox').venobox();
 
 
 /* =================================
-   SCROLL TO                  
+   SCROLL TO
 =================================== */
 var onMobile;
 
@@ -173,7 +173,7 @@ if (onMobile === true) {
 ============================================= */
 $(".mailchimp-subscribe").ajaxChimp({
     callback: mailchimpCallback,
-    url: "http://themedept.us9.list-manage.com/subscribe/post?u=63465a86fdd5f3b9fa31f9278&amp;id=52df53337f" // Replace your mailchimp post url inside double quote "".  
+    url: "http://themedept.us9.list-manage.com/subscribe/post?u=63465a86fdd5f3b9fa31f9278&amp;id=52df53337f" // Replace your mailchimp post url inside double quote "".
 });
 
 function mailchimpCallback(resp) {
@@ -183,12 +183,12 @@ if(resp.result === 'success') {
     .fadeIn(1000);
 
     $('.mc-failed').fadeOut(500);
-        
+
 } else if(resp.result === 'error') {
     $('.mc-failed')
     .html('<i class="icon icon_close_alt2"></i>' + resp.msg)
     .fadeIn(1000);
-            
+
     $('.mc-success').fadeOut(500);
 }
 }
@@ -232,7 +232,7 @@ $("#subscribe").submit(function(e) {
 });
 
 /* ============================
-   LOGIN-MODAL VALIDATION. 
+   LOGIN-MODAL VALIDATION.
 =============================== */
 $("#login-modal").submit(function(e) {
     e.preventDefault();
@@ -261,7 +261,7 @@ $("#login-modal").submit(function(e) {
 
 
 /* ===========================================
-   SIGNUP-MODAL VALIDATION. WITH CONFIRM PSW. 
+   SIGNUP-MODAL VALIDATION. WITH CONFIRM PSW.
 ============================================== */
 $("#signup-modal").submit(function(e) {
     e.preventDefault();
@@ -290,7 +290,7 @@ $("#signup-modal").submit(function(e) {
 });
 
 /* ================================================
-   SIGNUP-DIVIDER VALIDATION. WITHOUT CONFIRM PSW. 
+   SIGNUP-DIVIDER VALIDATION. WITHOUT CONFIRM PSW.
 =================================================== */
 $("#signup-divider").submit(function(e) {
     e.preventDefault();
@@ -319,7 +319,7 @@ $("#signup-divider").submit(function(e) {
             }
           }
          }).done(function(response) {
-           window.location.href = '/stuartweitzman/thank-you/'
+           window.location.href = '/signup/'
          });
     } else {
         $('.signup-failed').fadeIn(1000);
@@ -330,7 +330,7 @@ $("#signup-divider").submit(function(e) {
 });
 
 /* ===================================================
-   FAST-REGISTRATION VALIDATION. WITHOUT CONFIRM PSW. 
+   FAST-REGISTRATION VALIDATION. WITHOUT CONFIRM PSW.
 ====================================================== */
 $("#fast-reg").submit(function(e) {
     e.preventDefault();
@@ -361,7 +361,7 @@ $("#fast-reg").submit(function(e) {
    DOUGHNUT CHART
 ========================================================================== */
 var isdonut = 0;
-        
+
 $('.start-charts').waypoint(function(direction){
     if (isdonut == 1){}
         else {
@@ -421,14 +421,14 @@ $('.start-charts').waypoint(function(direction){
             ];
 
             if( document.getElementById("chart-area")){
-              
+
                 var ctx = document.getElementById("chart-area").getContext("2d");
                 window.myDoughnut = new Chart(ctx).Doughnut(doughnutData, {responsive : false});
 
                 var ctx = document.getElementById("chart2-area").getContext("2d");
                 window.myDoughnut = new Chart(ctx).Doughnut(doughnut2Data, {responsive : false});
 
-                isdonut = 1;              
+                isdonut = 1;
             }
 
         }
@@ -438,7 +438,7 @@ $('.start-charts').waypoint(function(direction){
    LINE CHART
 ========================================================================== */
 var isline = 0;
-        
+
 $('.start-line').waypoint(function(direction){
     if (isline == 1){}
         else {
@@ -514,7 +514,7 @@ $('.start-line').waypoint(function(direction){
     }
 
 /* ===========================================================
-   BOOTSTRAP FIX FOR IE10 in Windows 8 and Windows Phone 8  
+   BOOTSTRAP FIX FOR IE10 in Windows 8 and Windows Phone 8
 ============================================================== */
 if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
     var msViewportStyle = document.createElement('style');
@@ -528,7 +528,3 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 
 
 });
-
-
-
-

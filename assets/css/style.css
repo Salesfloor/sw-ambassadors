@@ -1,4 +1,4 @@
-/* 
+/*
 Template Name: SmartMVP - Responsive Premium Startup Landing Page Template
 Theme URL: http://themedept.com/demo/smartmvp/index.html
 Description: SmartMVP - Responsive Premium Startup Landing Page Template
@@ -33,7 +33,7 @@ Tags: startup landing page, app landing page, html5 template, one page, startup,
 
 /* ==========================================================================
    01. GENERAL STYLE
-========================================================================== */ 
+========================================================================== */
 /*------------------------------------------*/
 /*	 Basic Settings
 /*------------------------------------------*/
@@ -64,28 +64,28 @@ section{
 /*------------------------------------------------------------------*/
 /*	 Internet Explorer 10 in Windows 8 and Windows Phone 8 Bug fix
 /*-----------------------------------------------------------------*/
-@-webkit-viewport { 
-	width: device-width; 
+@-webkit-viewport {
+	width: device-width;
 }
 
-@-moz-viewport { 
-	width: device-width; 
+@-moz-viewport {
+	width: device-width;
 }
 
-@-ms-viewport { 
-	width: device-width; 
+@-ms-viewport {
+	width: device-width;
 }
 
-@-o-viewport { 
-	width: device-width; 
+@-o-viewport {
+	width: device-width;
 }
 
-@viewport { 
-	width: device-width; 
+@viewport {
+	width: device-width;
 }
 
 /*------------------------------------------*/
-/*	 Link 
+/*	 Link
 /*------------------------------------------*/
 
 a:hover, a:focus {
@@ -120,6 +120,14 @@ ul {
 /*	 Overlay Effect
 /*------------------------------------------*/
 .overlay{
+    /* Provides cross-browser RGBa background */
+    zoom: 1;
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#80000000', endColorstr='#80000000');
+    background: transparent;
+    background: rgba(51, 51, 51, 0.75);
+}
+
+.overlay-short {
     /* Provides cross-browser RGBa background */
     zoom: 1;
     filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#80000000', endColorstr='#80000000');
@@ -248,7 +256,7 @@ blockquote img {
 /*   Wrappers & Boxes
 /*------------------------------------------*/
 .wrapper-lg{
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .wrapper-md{
@@ -438,7 +446,7 @@ p {
 
 /* ==========================================================================
    03. BUTTONS & ICONS
-========================================================================== */ 
+========================================================================== */
 .btn {
  	font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
@@ -565,7 +573,7 @@ p {
     background-size: cover;
 }
 .header.swpage{
-    background: url("../images/stuartweitzman.jpg") no-repeat center center;
+    background: url("../images/sf_header.jpg") no-repeat center center;
     background-size: cover;
 }
 
@@ -575,6 +583,10 @@ p {
 
 .header .overlay {
     height: 650px;
+}
+
+.header .overlay-short {
+    height: 400px;
 }
 
 /*------------------------------------------*/
@@ -660,7 +672,7 @@ p {
 
 .navbar-toggle {
     color: #ffffff;
-    padding: 0; 
+    padding: 0;
     margin-top: 13px;
     margin-bottom: 0;
     font-size:26px;
@@ -676,7 +688,7 @@ p {
 /*------------------------------------------*/
 .navbar-nav>li>a.btn-nav {
     margin: 6px 0 10px 15px;
-    padding: 7px;  
+    padding: 7px;
 }
 
 .navbar-nav>li>a.btn-nav:hover, .navbar-nav>li>a.btn-nav:focus {
@@ -705,7 +717,7 @@ p {
 
 .hero-section .btn{
     margin-bottom: 0;
-} 
+}
 
 /*------------------------------------------*/
 /*   Header Solid-Background
@@ -751,7 +763,7 @@ p {
 /*   Header Slider
 /*------------------------------------------*/
 .header.slider{
-    background: none;  
+    background: none;
 }
 
 .header.slider .overlay{
@@ -786,7 +798,7 @@ p {
 
 /* ==========================================================================
    05. LOGIN/SIGNUP MODAL
-========================================================================== */ 
+========================================================================== */
 .login .modal-dialog{
     width: 400px;
     margin-top: 105px;
@@ -876,7 +888,7 @@ p {
 
 /* ==========================================================================
    06. SECTIONS SECTIONS
-========================================================================== */ 
+========================================================================== */
 /*------------------------------------------*/
 /*   About - Intro Features
 /*------------------------------------------*/
@@ -929,7 +941,7 @@ p {
 
 /* ==========================================================================
    07. TESTIMONIALS
-========================================================================== */ 
+========================================================================== */
 /*------------------------------------------*/
 /*   Testimonial-Press Section
 /*------------------------------------------*/
@@ -963,7 +975,7 @@ p {
 
 /* ==========================================================================
    08. FEATURES TAB
-========================================================================== */ 
+========================================================================== */
 .tab-features .features-title{
     padding-top: 120px;
     text-align: center;
@@ -1077,7 +1089,7 @@ p {
 
 /* ==================================================================================
    09. NEWSLETTER, FAST-REGISTRATION HEADER & SIGNUP DIVIDER SECTIONS
-=================================================================================== */ 
+=================================================================================== */
 /* Newsletter */
 .newsletter .table{
     display: table;
@@ -1299,7 +1311,7 @@ p {
 
 /* ==========================================================================
    10. CHARTS SECTION
-========================================================================== */ 
+========================================================================== */
 .charts p{
     margin-bottom: 20px;
 }
@@ -1388,7 +1400,7 @@ p {
 
 /* ==========================================================================
    11. PRICING TABS
-========================================================================== */ 
+========================================================================== */
 .pricing-tab {
     padding: 50px 30px 30px;
     border-radius: 7px;
@@ -1495,7 +1507,7 @@ p {
 
 /* ==========================================================================
    12. TEAM SECTION
-========================================================================== */ 
+========================================================================== */
 .team h4{
     margin-top: 20px;
 }
@@ -1573,7 +1585,7 @@ p {
 
 /* ==========================================================================
    13. MOBILE DOWNLOAD SECTION
-========================================================================== */ 
+========================================================================== */
 
 .mobile-text {
     font-size: 18px;
@@ -1658,7 +1670,7 @@ p {
 
 /* ==========================================================================
    14. FOOTER
-========================================================================== */ 
+========================================================================== */
 .footer, .footer a{
     color: #ced3d8;
 }
