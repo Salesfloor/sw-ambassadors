@@ -578,7 +578,7 @@ p {
 }
 
 .header.thankpage .nav {
-    display: none !important;
+    /*display: none !important;*/
 }
 
 .header .overlay {
